@@ -28,27 +28,102 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <!-- Rating state start -->
-
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
-    <div class="attribution">
+    <main>
+      <h1 class="visually-hidden">Interactive rating component</h1>
+      <article class="rating-card">
+        <div class="rating-card__rating hidden">
+          <img
+            class="rating__icon"
+            src="./images/icon-star.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <h2 class="rating-card__title">How did we do?</h2>
+          <p class="rating-card__text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form>
+            <fieldset class="rating__fieldset">
+              <legend class="visually-hidden">
+                Select a number between 1 to 5.
+              </legend>
+              <div>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  id="one"
+                  name="rating"
+                  value="1"
+                />
+                <label class="rating__label" for="one"> 1 </label>
+              </div>
+              <div>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  id="two"
+                  name="rating"
+                  value="2"
+                />
+                <label class="rating__label" for="two"> 2 </label>
+              </div>
+              <div>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  id="three"
+                  name="rating"
+                  value="3"
+                />
+                <label class="rating__label" for="three"> 3 </label>
+              </div>
+              <div>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  id="four"
+                  name="rating"
+                  value="4"
+                />
+                <label class="rating__label" for="four"> 4 </label>
+              </div>
+              <div>
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  id="five"
+                  name="rating"
+                  value="5"
+                />
+                <label class="rating__label" for="five"> 5 </label>
+              </div>
+            </fieldset>
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="rating-card__completed">
+          <img
+            class="completed__illustration"
+            src="./images/illustration-thank-you.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <p class="completed__selection">You selected 4 out of 5</p>
+          <h2 class="rating-card__title">Thank you!</h2>
+          <p class="rating-card__text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by
+      <a href="https://github.com/bramizdev" target="_blank">@bramizdev</a>.
+    </footer>
   </body>
 </html>
