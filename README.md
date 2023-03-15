@@ -30,13 +30,20 @@ Users should be able to:
 ### Screenshot
 
 - Desktop 
+
 <br>
+
 ![Captura de pantalla 2023-03-14 a las 18 39 50](https://user-images.githubusercontent.com/112894363/225174363-39455cda-7431-41aa-875c-d1a17ddadf90.png)
+
 <br>
+
 - Mobile
 <br>
+
 ![Captura de pantalla 2023-03-14 a las 18 39 59](https://user-images.githubusercontent.com/112894363/225174402-e16ae042-cb23-46cc-b9b2-dcfcc581f542.png)
+
 <br>
+
 
 ### Links
 
