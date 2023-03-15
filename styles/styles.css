@@ -288,6 +288,7 @@ footer a:focus-visible {
 .rating-card__completed {
   text-align: center;
   padding-top: 0.5rem;
+  animation: fade-in 0.5s forwards;
 }
 @media (min-width: 40.5rem) {
   .rating-card__completed {
@@ -321,5 +322,14 @@ footer a:focus-visible {
 @media (min-width: 40.5rem) {
   .completed__selection {
     margin-bottom: 2rem;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -31,7 +31,7 @@
     <main>
       <h1 class="visually-hidden">Interactive rating component</h1>
       <article class="rating-card">
-        <div class="rating-card__rating hidden">
+        <div class="rating-card__rating" id="rating-card">
           <img
             class="rating__icon"
             src="./images/icon-star.svg"
@@ -99,17 +99,19 @@
                 <label class="rating__label" for="five"> 5 </label>
               </div>
             </fieldset>
-            <button class="btn" type="submit">Submit</button>
+            <button class="btn" type="submit" id="submit">Submit</button>
           </form>
         </div>
-        <div class="rating-card__completed">
+        <div class="rating-card__completed hidden" id="completed-card">
           <img
             class="completed__illustration"
             src="./images/illustration-thank-you.svg"
             alt=""
             aria-hidden="true"
           />
-          <p class="completed__selection">You selected 4 out of 5</p>
+          <p class="completed__selection" id="selection-message">
+            You selected 4 out of 5
+          </p>
           <h2 class="rating-card__title">Thank you!</h2>
           <p class="rating-card__text">
             We appreciate you taking the time to give a rating. If you ever need
@@ -125,5 +127,6 @@
       >. Coded by
       <a href="https://github.com/bramizdev" target="_blank">@bramizdev</a>.
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
